@@ -1,0 +1,1147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/backg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} 
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: double;
+    font-size: 20px;
+}
+.nav-links ul li a.active,
+
+.nav-links ul li a:hover{
+    color: #FDC93B;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #fa0606;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li :hover::after{
+    width: 100%; 
+}
+.text-box{
+    width: 70%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box h1 p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #fff;
+}
+.buttonn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.buttonn:hover{
+    border: 1px solid#ff0000; 
+    background: #ff0000;
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 31px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* course  */
+.courses{
+    background-image: url(img/backcourses.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.course-content{
+    padding: 0 4vw 8vw 4vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    margin-top: 50px;
+}
+.row{
+    background: var(--bg-color);
+    padding: 0 0 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+}
+.row img:hover{
+    transform: translateY(-15px);
+}
+.row img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.course-text{
+    padding: 35px 20px;
+}
+.center-text h5{
+    padding: 1vw 0 0 0;
+    width: 100%;
+    font-size: 45px;
+   text-underline-position: below;
+   text-align: center;
+}
+.center-text p{
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+}
+.course-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0 0 10px;
+    transition: all .40s ease;
+}
+.course-text h6{
+    font-stretch: expanded;
+    text-align: center;
+    color: #22035c;
+    font-size: 18px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.star i{
+    color: #ff0000;
+    margin-right: 2px;
+    font-size: 17px;
+}
+.review p{
+    color: #696969;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/* features  */
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features h1{
+    font-size: 50px;
+}
+#features p{
+    font-style: italic;
+    font-size: 20px;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    padding: 1vw 0 3vw 3vw;
+}
+#features .fea-box{
+    background-color: #F9F9FF;
+    text-align: start;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+#features .fea-box h3{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgb(59, 46, 46);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 46);
+}
+
+
+
+/* experts */
+#experts{
+    padding: 0 8vw 0 8vw;
+    text-align: center;
+}
+#experts h1{
+    font-size: 49px;
+    font-smooth: 20px;
+}
+#experts p{
+    font-style: oblique;
+    padding: 1vw 0 0 0;
+    font-size: 18px;
+}
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    padding: 1vw 0 3vw 3vw;
+    
+}
+#experts .expert-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px ;
+}
+.profile img{
+    height: 250px;
+}
+.profile h6{
+    font-size: 25px;
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.pro-links i:hover{
+    background: rgb(21,21,100); 
+    color: #fff;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer{
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h3{
+    font-size: 20px;
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #86909a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color:  rgb(241, 240, 245);
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer .copyright p{
+    font-size: 18px;
+    color: #fff;
+}
+footer .copyright .pro-links{
+    margin-top: 0px;
+}
+footer .copyright .pro-links i{
+   background-color: #5f7185;
+   color: #fff;
+}
+footer .copyright .pro-links i:hover{
+    background-color: #55ff00;
+    color: #2c2c2c;
+}
+/* AFTER COMPLETING THE HOME PAGE STYLING THAT IS AFTER FOOTER SECTION all codes styling to be done */
+
+
+/* ABOUT */
+.about-home-first{
+    background-color: rgb(6, 167, 178);
+    width: auto;
+    height: 120px;
+}
+.about-home-first img{
+    width: 65px;
+}
+.about-home-first nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 0px 12px;
+    position: relative;
+}
+.about-home-first nav-links ul li a{
+    color: rgb(132, 234, 254);
+    text-decoration: double;
+    font-size: 18px;
+    word-spacing: 50px;
+}
+.about-home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(img/abtback.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+.about-home h2{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+#about-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(219, 239, 242);
+    padding: 6vw 8vw 2vw 8vw;
+}
+#about-container .about-image{
+    width: 60%;
+    padding-right: 60px;
+}
+#about-container .about-image img{
+    width: 100%;
+}
+#about-container .about-text{
+    width: 40%;
+}
+#about-container .about-text h2{
+    color: #29303B;
+    padding-bottom: 15px;
+    font-size: 45px;
+}
+#about-container .about-text p{
+    color: #2e3f5c;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+#about-container .about-text .about-fe{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+#about-container .about-text .about-fe img{
+    width: 50px;
+    background-size: contain;
+    background-position: center;
+    margin-right: 20px;
+}
+#about-container .about-text .about-fe .fe-text{
+    width: 90%;
+}
+#about-container .about-text .about-fe .fe-text h5{
+    font-size: 20px;
+    color: #2e3f5c;
+}
+
+#trust{
+    text-align: center;
+    padding: 4vw 0 4vw 0;
+}
+#trust h1{
+    font-size: 40px;
+}
+#trust p{
+    font-size: 18px;
+    font-style: italic;
+}
+#trust .trust-image{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#trust .trust-image img{
+    width: 100px;
+    height: 80px;
+}
+
+/* Course-Ineer content for 1*/
+#course-ineer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-ineer h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-ineer p{
+    color: #64626e;
+}
+#course-ineer .overview{
+    width: 70%;
+}
+#course-ineer .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-ineer .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-ineer .overview .course-head .c-name{
+    width: 70%;
+}
+#course-ineer .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-ineer .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-ineer .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-ineer .overview .course-head .c-name .star p{
+    font-size: 15px;
+}
+#course-ineer .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-ineer .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-ineer .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-ineer .tutor{
+    display: flex; 
+}
+#course-ineer .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-ineer .tutor h5{
+    font-size: 17px;
+}
+#course-ineer .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-ineer .enroll h3{
+    padding-bottom: 10px;
+}
+#course-ineer .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-ineer .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* Course-Ineer content for 2*/
+#course-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-inner h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-inner p{
+    color: #64626e;
+}
+#course-inner .overview{
+    width: 70%;
+}
+#course-inner .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-inner .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-inner .overview .course-head .c-name{
+    width: 70%;
+}
+#course-inner .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-inner .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-inner .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-inner .overview .course-head .c-name .star p{
+    font-size: 15px;
+}
+#course-inner .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-inner .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-inner .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-inner .tutor{
+    display: flex; 
+}
+#course-inner .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-inner .tutor h5{
+    font-size: 17px;
+}
+#course-inner .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-inner .enroll h3{
+    padding-bottom: 10px;
+}
+#course-inner .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-inner .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+
+/* Course-Ineer content for 3*/
+#course-innerthird{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-innerthird h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-innerthird p{
+    color: #64626e;
+}
+#course-innerthird .overview{
+    width: 70%;
+}
+#course-innerthird .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-innerthird .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-innerthird .overview .course-head .c-name{
+    width: 70%;
+}
+#course-innerthird .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-innerthird .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-innerthird .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-innerthird .overview .course-head .c-name .star p{
+    font-size: 15px;
+}
+#course-innerthird .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-innerthird .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-innerthird .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-innerthird .tutor{
+    display: flex; 
+}
+#course-innerthird .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-innerthird .tutor h5{
+    font-size: 17px;
+}
+#course-innerthird .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-innerthird .enroll h3{
+    padding-bottom: 10px;
+}
+#course-innerthird .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-innerthird .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+} 
+
+
+/* Course-Ineer content for 4*/
+#course-innerfor{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-innerfor h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-innerfor p{
+    color: #64626e;
+}
+#course-innerfor .overview{
+    width: 70%;
+}
+#course-innerfor .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-innerfor .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-innerfor .overview .course-head .c-name{
+    width: 70%;
+}
+#course-innerfor .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-innerfor .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-innerfor .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-innerfor .overview .course-head .c-name .star p{
+    font-size: 15px;
+}
+#course-innerfor .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-innerfor .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-innerfor .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-innerfor .tutor{
+    display: flex; 
+}
+#course-innerfor .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-innerfor .tutor h5{
+    font-size: 17px;
+}
+#course-innerfor .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-innerfor .enroll h3{
+    padding-bottom: 10px;
+}
+#course-innerfor .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-innerfor .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+/* Course-Ineer content for 5*/
+#course-innerfiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-innerfiv h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-innerfiv p{
+    color: #64626e;
+}
+#course-innerfiv .overview{
+    width: 70%;
+}
+#course-innerfiv .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-innerfiv .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-innerfiv .overview .course-head .c-name{
+    width: 70%;
+}
+#course-innerfiv .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-innerfiv .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-innerfiv .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-innerfiv .overview .course-head .c-name .star p{
+    font-size: 15px;
+}
+#course-innerfiv .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-innerfiv .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-innerfiv .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-innerfiv .tutor{
+    display: flex; 
+}
+#course-innerfiv .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-innerfiv .tutor h5{
+    font-size: 17px;
+}
+#course-innerfiv .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-innerfiv .enroll h3{
+    padding-bottom: 10px;
+}
+#course-innerfiv .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-innerfiv .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+/* Course-Ineer content for 6*/
+#course-innersix{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-innersix h3{
+    padding: 35px 0 25px 0;
+    color: #293038;
+    font-size: 25px;
+}
+#course-innersix p{
+    color: #64626e;
+}
+#course-innersix .overview{
+    width: 70%;
+}
+#course-innersix .overview .course-image{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#course-innersix .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#course-innersix .overview .course-head .c-name{
+    width: 70%;
+}
+#course-innersix .overview .course-head .c-name h2{
+    color: #1e06a4;
+}
+#course-innersix .overview .course-head .c-name .star{
+    margin: 6px 0;
+}
+#course-innersix .overview .course-head .c-name .star i{
+    border-radius: 5px;
+    color: rgb(215, 229, 26);
+    font-size: 1rem;
+}
+#course-innersix .overview .course-head .c-name .star p{
+    font-size:15px;
+}
+#course-innersix .overview .course-head span{
+    padding: 16px 22px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgb(228, 240, 54, 0.959);
+}
+#course-innersix .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#course-innersix .learn p i{
+    color: #7207a4;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#course-innersix .tutor{
+    display: flex; 
+}
+#course-innersix .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#course-innersix .tutor h5{
+    font-size: 17px;
+}
+#course-innersix .enroll{
+    width: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 11px;
+    box-shadow: 0 20px 40px 0 rgb(11 2 55 / 8%) ;
+}
+#course-innersix .enroll h3{
+    padding-bottom: 10px;
+}
+#course-innersix .enroll p{
+    font-size: 15px;
+    color: #64626e;
+    margin: 15px 0;
+}
+#course-innersix .enroll p i{
+    color: #654ce4;
+    font-weight: 500;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* contact  */
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#contact .getin{
+    width: 350 px;
+}
+#contact .getin h2{
+    color: #2c234d;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: .8;
+    margin-bottom: 16px;
+}
+#contact .getin p{
+    color: #3f3f41;
+    width: 460px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e4ed;
+}
+#contact .getin h3{
+    color: #2c234d;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 14px;
+}
+#contact .getin .getin-details div{
+    display: flex;
+}
+#contact .getin .getin-details div .get{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5838fc;
+    margin-right: 20px;
+}
+#contact .getin .getin-details div p{
+    font-size: 14px;
+    border-bottom: none;
+}
+#contact .getin .getin-details .pro-links i{
+    margin-right: 8px;
+}
+#contact .form{
+    width: 60%;
+    background-color: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+#contact .form h4{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#contact .form p{
+    color: #686875;
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+#contact .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#contact .form .form-row input{
+    width: 45%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+#contact .form .form-col input,
+#contact .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+#contact .form button{
+    font-size: 1rem;
+    padding: 23px 18px;
+    background: rgb(21, 21, 100);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+#map{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 8vw;
+}
+#map iframe{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
+
+/* yaha par woh media wala aayega */
